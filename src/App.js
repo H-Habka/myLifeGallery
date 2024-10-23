@@ -16,31 +16,49 @@ const randomizedArray = randomizeArray(onlyMeImages)
 
 function App() {
   return (
-    <div className="">
-      <div>
-        <p>Hi </p>
-      </div>
-      <ResponsiveMasonry
-        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1024: 4, 1440: 5 }}
-      >
-        <Masonry columnsCount={4} gutter="10px">
-          {randomizedArray.map((item) => {
-            return (
-              <LazyLoadImage
-                effect="blur"
-                wrapperProps={{
-                  style: { transitionDelay: "1s" },
-                }}
-                src={item}
-                key={item}
-                alt={item}
-              />
-            )
-          })}
-        </Masonry>
-      </ResponsiveMasonry>
-    </div>
+    <>
+      {" "}
+      {randomizedArray.map((item) => {
+        return (
+          <LazyLoadImage
+            effect="blur"
+            wrapperProps={{
+              style: { transitionDelay: "1s" },
+            }}
+            src={item}
+            key={item}
+            alt={item}
+          />
+        )
+      })}
+    </>
   )
+  // return (
+  //   <div className="">
+  //     <div>
+  //       <p>Hi </p>
+  //     </div>
+  //     <ResponsiveMasonry
+  //       columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1024: 4, 1440: 5 }}
+  //     >
+  //       <Masonry columnsCount={4} gutter="10px">
+  //         {randomizedArray.map((item) => {
+  //           return (
+  //             <LazyLoadImage
+  //               effect="blur"
+  //               wrapperProps={{
+  //                 style: { transitionDelay: "1s" },
+  //               }}
+  //               src={item}
+  //               key={item}
+  //               alt={item}
+  //             />
+  //           )
+  //         })}
+  //       </Masonry>
+  //     </ResponsiveMasonry>
+  //   </div>
+  // )
 }
 
 export default App
