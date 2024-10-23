@@ -16,7 +16,7 @@ const randomizedArray = randomizeArray(onlyMeImages)
 
 function App() {
   return (
-    <div className="">
+    <div className="px-[10px]">
       <div>
         <p>Hi </p>
       </div>
@@ -34,7 +34,6 @@ function App() {
                 src={item}
                 key={item}
                 alt={item}
-                width={700}
                 height={800}
                 className="rounded-lg"
               />
