@@ -1,5 +1,4 @@
 import React from "react"
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { onlyMeImages } from "./images/onlyMe"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
@@ -16,8 +15,7 @@ const randomizedArray = randomizeArray(onlyMeImages)
 
 function App() {
   return (
-    <>
-      {" "}
+    <div>
       {randomizedArray.map((item) => {
         return (
           <LazyLoadImage
@@ -31,7 +29,7 @@ function App() {
           />
         )
       })}
-    </>
+    </div>
   )
   // return (
   //   <div className="">
