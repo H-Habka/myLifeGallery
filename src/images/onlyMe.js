@@ -11,7 +11,6 @@ export const onlyMeImages = [
   "https://i.imgur.com/mXAXhei.jpeg",
   "https://i.imgur.com/rM5ByfQ.jpeg",
   "https://i.imgur.com/G61vJ7w.jpeg",
-  "https://i.imgur.com/W3BqrP9.jpeg",
   "https://i.imgur.com/WMwaYOE.jpeg",
   "https://i.imgur.com/SIVIu6s.jpeg",
   "https://i.imgur.com/lc2npm0.jpeg",
